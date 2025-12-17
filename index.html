@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clicker Game — 1.0</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game">
+    <h1>Clicker Game</h1>
+
+    <div class="stats">
+      <div id="score" class="stat">Punkty: 0</div>
+      <div id="ppc" class="stat">Punkty za kliknięcie: 1</div>
+      <div id="cps" class="stat">Kliknięcia na sekundę: 0</div>
+    </div>
+
+    <button id="clickBtn">KLIK!</button>
+
+    <div class="controls">
+      <button id="shopBtn" class="small-btn" aria-expanded="false">Sklep</button>
+    </div>
+
+    <!-- SKLEP -->
+    <div id="shop" aria-hidden="true">
+      <h2>Sklep</h2>
+
+      <div class="shop-item">
+        <h3>Ulepszenie kliknięcia ×2</h3>
+        <p>Zwiększa punkty za kliknięcie i autoklikery ×2</p>
+        <p>Koszt: <span id="clickUpgradeCost" class="price">50</span></p>
+        <button id="buyClickUpgradeBtn" class="buy-btn">Kup</button>
+      </div>
+
+      <div class="shop-item">
+        <h3>Autokliker</h3>
+        <p>Daje +1 punkt/sek (mnożone przez ulepszenia)</p>
+        <p>Koszt: <span id="autoclickerCost" class="price">20</span></p>
+        <p>Masz: <span id="autoclickerCount">0</span></p>
+        <button id="buyAutoclickerBtn" class="buy-btn">Kup</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="version-label">v1.0 © 2025</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
