@@ -1,2 +1,2 @@
-# clikme.io
-Polski kliker.
+# Clickme.io
+Kliker z # POLSKI
